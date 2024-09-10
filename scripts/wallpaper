@@ -4,6 +4,6 @@
 ##
 ## Set Wallpaper in Hyprland
 
-WALLPAPER='/home/metwas/Pictures/wallpapers/windows-11-flow-dark-mode-dark-background-pink-3440x1440-5747.jpg'
+WALLPAPER='/home/metwas/Pictures/wallpapers/abstract-red-spikes-science-fiction-_2440-37.jpg'
 
 swaybg --output '*' --mode fill --image "$WALLPAPER"
