@@ -58,7 +58,7 @@ source_pywal() {
 	}
 
 	# Run `pywal` to generate colors
-	generate_colors() {	
+	generate_colors() {
 		check_wallpaper
 		if [[ `which wal` ]]; then
 			notify-send -t 50000 -h string:x-canonical-private-synchronous:sys-notify-runpywal -i ${PATH_MAKO}/icons/timer.png "Generating Colorscheme. Please wait..."
@@ -96,7 +96,7 @@ apply_alacritty() {
 		[colors.primary]
 		background = "${background}"
 		foreground = "${foreground}"
-		
+
 		[colors.normal]
 		black   = "${color0}"
 		red     = "${color1}"
@@ -106,7 +106,7 @@ apply_alacritty() {
 		magenta = "${color5}"
 		cyan    = "${color6}"
 		white   = "${color7}"
-		
+
 		[colors.bright]
 		black   = "${color8}"
 		red     = "${color9}"
@@ -240,7 +240,7 @@ apply_wlogout() {
 
 ## Wofi --------------------------------------
 apply_wofi() {
-	# wofi : colors	
+	# wofi : colors
 	sed -i ${PATH_WOFI}/style.css \
 		-e "s/@define-color background .*/@define-color background      ${background};/g" \
 		-e "s/@define-color background-alt1 .*/@define-color background-alt1 ${modbackground[1]};/g" \

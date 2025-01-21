@@ -4,6 +4,6 @@
 ##
 ## Set Wallpaper in Hyprland
 
-WALLPAPER='/home/metwas/Pictures/wallpapers/abstract-red-spikes-science-fiction-_2440-37.jpg'
+WALLPAPER='/home/metwas/Pictures/wallpapers/wallpaper_5.jpg'
 
 swaybg --output '*' --mode fill --image "$WALLPAPER"
