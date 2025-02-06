@@ -8,7 +8,7 @@ pacman -S --noconfirm hyprland rofi-wayland hyprpaper hyprlock xdg-desktop-porta
 # pacman -S waybar
 
 # Tools
-pacman -S --noconfirm kitty fastfetch base-devel ninja gcc git make ncurses flex bison gperf python2-pyserial zsh fzf wireshark-cli
+pacman -S --noconfirm kitty fastfetch base-devel ninja gcc git make ncurses flex bison gperf python2-pyserial zsh fzf wireshark-cli cava
 
 # Drivers
 pacman -S --noconfirm mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver
