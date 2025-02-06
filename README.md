@@ -2,7 +2,7 @@
 pacman -Syu --noconfirm
 
 # Hyprland base
-pacman -S --noconfirm hyprland waybar rofi-wayland hyprpaper 
+pacman -S --noconfirm hyprland waybar rofi-wayland hyprpaper hyprlock
 
 # Tools
 pacman -S --noconfirm kitty fastfetch base-devel ninja gcc zsh fzf
