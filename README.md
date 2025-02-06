@@ -14,7 +14,7 @@ pacman -S --noconfirm kitty fastfetch base-devel ninja gcc git make ncurses flex
 pacman -S --noconfirm mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver
 
 # Apps
-yay -S --noconfirm thorium-browser-bin vscodium esp-idf
+yay -S --noconfirm thorium-browser-bin vscodium esp-idf yazi
 
 # NVM (zsh)
 yay -S ttf-meslo-nerd-font-powerlevel10k
