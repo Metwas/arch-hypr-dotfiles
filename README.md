@@ -8,13 +8,13 @@ pacman -S --noconfirm hyprland rofi-wayland hyprpaper hyprlock xdg-desktop-porta
 # pacman -S waybar
 
 # Tools
-pacman -S --noconfirm kitty fastfetch base-devel ninja gcc zsh fzf
+pacman -S --noconfirm kitty fastfetch base-devel ninja gcc git make ncurses flex bison gperf python2-pyserial zsh fzf wireshark-cli
 
 # Drivers
 pacman -S --noconfirm mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver
 
 # Apps
-yay -S --noconfirm thorium-browser-bin vscodium
+yay -S --noconfirm thorium-browser-bin vscodium esp-idf
 
 # NVM (zsh)
 yay -S ttf-meslo-nerd-font-powerlevel10k
@@ -39,40 +39,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-
 # Add the following hyprland tools to the ~/.config/hypr/hyprland.conf
 # exec-once = waybar &
 # exec-once = hyprpaper &
+# exec-once = conky -c /home/metwas/.config/conky
 
 # Conky 
 pacman -S --noconfirm conky
-
-# Configure conky to support wayland
-mkdir -p ~/.config/conky
-cat > ~/.config/conky/conky.conf <<EOF
-conky.config = {
-    background = true,
-    update_interval = 1,
-    own_window = true,
-    own_window_type = 'dock',
-    own_window_transparent = true,
-    double_buffer = true,
-    draw_shades = false,
-    draw_outline = false,
-    draw_borders = false,
-    draw_graph_borders = true,
-    use_xft = true,
-    alignment = 'top_right',
-    gap_x = 10,
-    gap_y = 10,
-    minimum_width = 250, minimum_height = 5
-}
-
-conky.text = [[
-\${time %H:%M:%S}
-\${cpu cpu0}% CPU
-\${mem} RAM
-\${fs_free /} free disk
-]]
-EOF
-
-echo "Conky configuration written to ~/.config/conky/conky.conf"
 
 
 
