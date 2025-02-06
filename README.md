@@ -5,11 +5,19 @@ pacman -Syu --noconfirm
 pacman -S --noconfirm hyprland waybar rofi-wayland hyprpaper 
 
 # Tools
-pacman -S --noconfirm kitty fastfetch base-devel ninja gcc
+pacman -S --noconfirm kitty fastfetch base-devel ninja gcc zsh
 
 # Drivers
 pacman -S --noconfirm mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver
 
 # Apps
 yay -S --noconfirm thorium-browser-bin vscodium
+
+# NVM (zsh)
+yay -S ttf-meslo-nerd-font-powerlevel10k
+git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# Must enter this in the .zshrc file 
+# plugins=(zsh-nvm zsh-autosuggestions)
 
