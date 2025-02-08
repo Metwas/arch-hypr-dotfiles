@@ -1,12 +1,20 @@
 # Update
-pacman -Syu --noconfirm
+sudo pacman -Sc --noconfirm
+sudo pacman-key --populate archlinux
+sudo pacman -Sy archlinux-keyring
+sudo pacman -Syu --noconfirm
+
+# YAY
+git clone https://aur.archlinux.org/yay-bin.git
+cd ./yay-bin
+makepkg -si
 
 # Hyprland base
 sudo pacman -S --noconfirm hyprland    
-pacman -S --noconfirm rofi-wayland 
-pacman -S --noconfirm hyprpaper 
-pacman -S --noconfirm hyprlock 
-pacman -S --noconfirm xdg-desktop-portal-hyprland 
+sudo pacman -S --noconfirm rofi-wayland 
+sudo pacman -S --noconfirm hyprpaper 
+sudo pacman -S --noconfirm hyprlock 
+sudo pacman -S --noconfirm xdg-desktop-portal-hyprland 
 
 # waybar ??
 # pacman -S waybar
@@ -34,7 +42,7 @@ yay -S --noconfirm yazi
 pacman -S --noconfirm mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver
 
 # Apps
-yay -S --noconfirm thorium-browser-bin vscodium esp-idf
+yay -S --noconfirm thorium-browser-bin vscodium-bin esp-idf
 
 # NVM (zsh)
 yay -S ttf-meslo-nerd-font-powerlevel10k
