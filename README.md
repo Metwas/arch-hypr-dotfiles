@@ -35,14 +35,22 @@ sudo pacman -S --noconfirm zsh
 sudo pacman -S --noconfirm fzf
 sudo pacman -S --noconfirm wireshark-cli
 
-yay -S --noconfirm cava
-yay -S --noconfirm yazi
+
 
 # Drivers
-pacman -S --noconfirm mesa xf86-video-amdgpu vulkan-radeon libva-mesa-driver
+sudo pacman -S --noconfirm mesa   
+sudo pacman -S --noconfirm xf86-video-amdgpu
+sudo pacman -S --noconfirm vulkan-radeon
+sudo pacman -S --noconfirm libva-mesa-driver
 
 # Apps
-yay -S --noconfirm thorium-browser-bin vscodium-bin esp-idf
+yay -S --noconfirm thorium-browser-bin
+yay -S --noconfirm vscodium-bin 
+yay -S --noconfirm esp-idf
+yay -S --noconfirm cava
+yay -S --noconfirm yazi
+yay -S --noconfirm hollywood
+sudo pacman -S --noconfirm cmatrix
 
 # NVM (zsh)
 yay -S ttf-meslo-nerd-font-powerlevel10k
