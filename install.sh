@@ -38,6 +38,7 @@ sudo pacman -S --noconfirm fzf
 sudo pacman -S --noconfirm wireshark-cli
 sudo pacman -S --noconfirm zip
 sudo pacman -S --noconfirm unzip
+sudo pacman -S --noconfirm rar
 sudo pacman -S --noconfirm conky
 sudo pacman -S --noconfirm cmatrix
 sudo pacman -S grub
@@ -66,7 +67,7 @@ sudo pacman -S --noconfirm libva-mesa-driver
 
 # Apps
 yay -S --noconfirm thorium-browser-bin
-yay -S --noconfirm vscodium-bin 
+yay -S --noconfirm zed
 yay -S --noconfirm esp-idf
 yay -S --noconfirm cava
 yay -S --noconfirm yazi
