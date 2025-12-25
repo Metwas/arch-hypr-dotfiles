@@ -1,6 +1,6 @@
 #!/bin/bash
 # Essential networking
-sudo pacman -S iwd
+sudo pacman -S --noconfirm iwd
 
 sudo mkdir /etc/iwd
 sudo mkdir /etc/systemd/resolved.conf.d
@@ -25,7 +25,7 @@ sudo systemctl enable systemd-resolved.service
 # Update
 sudo pacman -Sc --noconfirm
 sudo pacman-key --populate archlinux
-sudo pacman -Sy archlinux-keyring
+sudo pacman -Sy --noconfirm archlinux-keyring
 sudo pacman -Syu --noconfirm
 sudo pacman -Sy --noconfirm iwd
 
