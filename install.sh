@@ -117,7 +117,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # ZSH THEME
 # git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 # Hyprland dotfiles
-git clone https://github.com/Metwas/arch-hypr-dotfiles.git ~/
+curl -L -O https://github.com/Metwas/arch-hypr-dotfiles/archive/refs/heads/main.zip
+sudo unzip ./main.zip
+sudo mv ./arch-hypr-dotfiles-main/* ~/
+sudo mv ./arch-hypr-dotfiles-main/.* ~/
+
+sudo rm -rf ./temp
+sudo rm ./main.zip
 
 # Restart
 sudo systemctl daemon-reexec
