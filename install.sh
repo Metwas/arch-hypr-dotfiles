@@ -1,5 +1,7 @@
 #!/bin/bash
 # Essential networking
+sudo pacman -S iwd
+
 sudo mkdir /etc/iwd
 sudo mkdir /etc/systemd/resolved.conf.d
 
