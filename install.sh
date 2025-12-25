@@ -37,6 +37,7 @@ sudo pacman -S --noconfirm rar
 sudo pacman -S --noconfirm conky
 sudo pacman -S --noconfirm cmatrix
 sudo pacman -S --noconfirm btop
+sudo pacman -S --noconfirm go
 sudo pacman -S grub
 
 # YAY
