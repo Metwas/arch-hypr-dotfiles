@@ -113,6 +113,6 @@ source $ZSH/oh-my-zsh.sh
 #alias ls="ls -la"
 #
 alias puszek='thorium-browser --app=https://www.youtube.com'
-alias squek='rm -rf ~/.local/share/Trash/* > /dev/null && rm -rf /var/tmp > /dev/null && npm cache clean --force'
+alias squek='gio trash --empty && rm -rf /var/tmp > /dev/null && npm cache clean --force'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
