@@ -43,10 +43,7 @@ git clone https://github.com/Metwas/nightfox.zed.git
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # NVM (zsh)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-yay -S ttf-meslo-nerd-font-powerlevel10k
-git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 
 # Must enter this in the .zshrc file
 # plugins=(zsh-nvm zsh-autosuggestions)
