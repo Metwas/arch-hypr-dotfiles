@@ -5,7 +5,7 @@ sudo unzip ./main.zip
 sudo mv ./arch-hypr-dotfiles-main/* ~/
 sudo mv ./arch-hypr-dotfiles-main/.* ~/
 
-sudo rm -rf ./temp
+sudo rm -rf ./arch-hypr-dotfiles-main
 sudo rm ./main.zip
 
 # autostart hyprland

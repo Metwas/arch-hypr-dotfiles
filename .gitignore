@@ -22,7 +22,7 @@
 /.local/share/*
 /.local/state
 
-~/scripts
+!/scripts
 !/.local/share/rofi
 !/.config/wallpapers
 !/.config/hypr
