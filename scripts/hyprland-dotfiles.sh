@@ -8,6 +8,8 @@ sudo cp -r ./arch-hypr-dotfiles-main/.* ./
 sudo rm -rf ./arch-hypr-dotfiles-main
 sudo rm ./main.zip
 
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
 # autostart hyprland
 sudo cat <<EOF | sudo tee ~/.zprofile
 if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
