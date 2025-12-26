@@ -3,7 +3,7 @@
 curl -L -O https://github.com/Metwas/arch-hypr-dotfiles/archive/refs/heads/main.zip
 sudo unzip ./main.zip
 sudo cp -r ./arch-hypr-dotfiles-main/* ./
-sudo cp -f ./arch-hypr-dotfiles-main/.* ./
+sudo cp -r ./arch-hypr-dotfiles-main/.* ./
 
 sudo rm -rf ./arch-hypr-dotfiles-main
 sudo rm ./main.zip
