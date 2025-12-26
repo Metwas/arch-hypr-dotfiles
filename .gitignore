@@ -1,5 +1,6 @@
 /*
 !/.config/
+!/.local/
 
 /.config/cava
 /.config/byobu
@@ -14,7 +15,14 @@
 /.config/thorium
 /.config/VSCodium
 /.config/xsettings*
+/.local/share/Steam
+/.local/share/zed
+/.local/zed*
+/.local/share/mime
+/.local/share/*
+/.local/state
 
+!/.local/share/rofi
 !/.config/wallpapers
 !/.config/hypr
 !/.config/rofi

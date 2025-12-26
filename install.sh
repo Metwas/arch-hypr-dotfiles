@@ -63,7 +63,7 @@ sudo pacman -S --noconfirm btop
 sudo pacman -S --noconfirm go
 sudo pacman -S --noconfirm grub
 sudo pacman -S --noconfirm thunar
-sudo pacman -S --noconfirm brightnessctl
+# sudo pacman -S --noconfirm brightnessctl
 
 # YAY
 git clone https://aur.archlinux.org/yay-bin.git
@@ -99,6 +99,7 @@ yay -S --noconfirm esp-idf
 yay -S --noconfirm cava
 yay -S --noconfirm yazi
 yay -S --noconfirm hollywood
+yay -S --noconfirm tty-clock
 
 # ZED custom THEME
 git clone https://github.com/Metwas/nightfox.zed.git
@@ -107,6 +108,7 @@ git clone https://github.com/Metwas/nightfox.zed.git
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # NVM (zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 yay -S ttf-meslo-nerd-font-powerlevel10k
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
