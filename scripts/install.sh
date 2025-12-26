@@ -37,16 +37,12 @@ yay -S --noconfirm hollywood
 yay -S --noconfirm tty-clock
 
 # ZED custom THEME
-git clone https://github.com/Metwas/nightfox.zed.git
+sudo mkdir ./.config/zed
+sudo mkdir ./.config/zed/themes
+git clone https://github.com/Metwas/nightfox.zed.git ./.config/zed/themes
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-# NVM (zsh)
-
-
-# Must enter this in the .zshrc file
-# plugins=(zsh-nvm zsh-autosuggestions)
 
 # Restart
 sudo systemctl daemon-reexec

@@ -6,3 +6,6 @@ git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 chsh -s $(which zsh)
+
+# Must enter this in the .zshrc file
+# plugins=(git zsh-nvm zsh-autosuggestions)
